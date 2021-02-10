@@ -1,2 +1,3 @@
 # Wireless-and-Mobile-Computing_Subject
-This repository contains the work from Wireless and Mobile Computing Subject. Most of the work will be related to flutter and dart.
+This repository contains the work from Wireless and Mobile Computing Subject.
+This repository is focusing on creating mobile applications based on flutter and dart.
