@@ -135,14 +135,11 @@ class earphoneScreen extends StatelessWidget {
 }
 
 class DetailScreen extends StatelessWidget {
-// Declare a field that holds the Todo.
   final Earphonedata earphone;
   int totalprice;
-// In the constructor, require a Todo.
   DetailScreen({Key key, @required this.earphone, this.totalprice}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-// Use the Todo to create the UI.
     return Scaffold(
       appBar: AppBar(
         title: Text(earphone.title),
