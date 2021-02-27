@@ -114,6 +114,9 @@ class earphoneScreen extends StatelessWidget {
           builder: (context) =>
               DetailScreen(earphone: earphones[index], totalprice: AccumulatedPrice)),
     );
+    if (AccumulatedPrice == null){
+      AccumulatedPrice = 0;
+    }
     Scaffold.of(context)
         .showSnackBar(new SnackBar(duration: new Duration(seconds: 1),content: new Text("Total Price:  $AccumulatedPrice Baht")));
 
