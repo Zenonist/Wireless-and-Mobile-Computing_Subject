@@ -1,0 +1,62 @@
+[
+    {
+        "image": "Andromeda.jpg",
+        "title": "Campfire Audio Andromeda 2020",
+        "specification": "5 balanced armature driver",
+        "price": 4390
+    },
+    {
+        "image": "Lola.jpg",
+        "title": "JH Audio Lola",
+        "specification": "the Lola features dual low balanced armature drivers, dual opposed 4.9mm dynamic mid drivers and quad balanced armature highs",
+        "price": 6490
+    },
+    {
+        "image": "Orion.jpg",
+        "title": "Campfire Audio Orion",
+        "specification": "Single Full Range Balanced Armature Driver.",
+        "price": 1112
+    },
+    {
+        "image": "oriveti.jpg",
+        "title":"Oriveti New Primacy",
+        "specification": "Knowles Dual Armature Driver & 8mm Dynamic Driver.",
+        "price": 1011
+    },
+    {
+        "image": "Shure_Aonic.jpg",
+        "title": "Shure AONIC 3",
+        "specification": "Single Balanced Armature.",
+        "price": 799
+    },
+    {
+        "image": "Solaris.jpg",
+        "title":"Campfire Audio Solaris 2020",
+        "specification": "Dual Custom Balanced Armature Drivers + T.A.E.C. (High),Single Updated Custom Balanced Armature Driver (Mid),Specially Tuned 10mm Dynamic Driver (Mid + Low)",
+        "price": 5090
+    },
+    {
+        "image": "Star.jpg",
+        "title": "Aroma Audio Star",
+        "specification": "Single Full Range Balanced Armature Driver.",
+        "price": 841
+    },
+    {
+        "image": "W50.jpg",
+        "title": "Westone W50",
+        "specification": "5 Balanced Armature drivers.",
+        "price": 2000
+    },
+    {
+        "image": "WGpro.jpg",
+        "title": "Aroma Witch Girl Pro",
+        "specification": "4 Balanced Armature drivers + 2 Dynamic drivers.",
+        "price": 3490
+    },
+    {
+        "image": "WGs.jpg",
+        "title": "Aroma Witch Girl S",
+        "specification": "5 Balanced Armature drivers.",
+        "price": 2990
+    }
+]
