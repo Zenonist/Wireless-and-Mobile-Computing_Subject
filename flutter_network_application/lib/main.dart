@@ -1,3 +1,4 @@
+// Phonarnun Taityamaneekul 6188062 Section 2
 import 'package:flutter/material.dart'; 
 import 'dart:async'; 
 import 'dart:convert'; 
@@ -122,8 +123,9 @@ class ProductBoxList extends StatelessWidget {
     if (purchased_data.price == null){
       purchased_data.price = 0;
     }
+    int tempprice = purchased_data.price;
     Scaffold.of(context)
-        .showSnackBar(new SnackBar(duration: new Duration(seconds: 1),content: new Text("Thank You for your purcahse")));
+        .showSnackBar(new SnackBar(duration: new Duration(seconds: 1),content: new Text("Total Price:  $tempprice Baht")));
 
   }
   }
@@ -246,7 +248,7 @@ class quotation_screen extends StatelessWidget {
                 padding: const EdgeInsets.all(8.0),
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pop(context,Data.price);
+                    Navigator.pop(context,Data);
                   },
                   child: Text('Not Yet, I need to buy more'),
                 ),
