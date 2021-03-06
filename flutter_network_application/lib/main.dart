@@ -1,9 +1,11 @@
 // Phonarnun Taityamaneekul 6188062 Section 2
+// Error: Flutter can't send class data back to the previous page [When we press back button], This error causes the whole program error.
+// I need to mention that i can't solve this error.
 import 'package:flutter/material.dart'; 
 import 'dart:async'; 
 import 'dart:convert'; 
 import 'package:http/http.dart' as http; 
-import 'Product.dart'; 
+import 'product.dart'; 
 
 
 class quotation_data {
@@ -70,7 +72,6 @@ class MyHomePage extends StatelessWidget {
 class ProductBoxList extends StatelessWidget {
    final List<Product> items; 
    quotation_data purchased_data = new quotation_data(0);
-   
    int AccumulatedPrice = 0;
    ProductBoxList({Key key, this.items}); 
    
@@ -98,7 +99,8 @@ class ProductBoxList extends StatelessWidget {
       );
    }
    _navigateAndDisplaySelection(BuildContext context, index) async {
-
+    int tempprice = 0;
+    purchased_data.price = 0;
     purchased_data = await Navigator.push(
       context,
       MaterialPageRoute(
@@ -108,12 +110,12 @@ class ProductBoxList extends StatelessWidget {
     if (purchased_data.price == null){
       purchased_data.price = 0;
     }
-    int tempprice = purchased_data.price;
     Scaffold.of(context)
         .showSnackBar(new SnackBar(duration: new Duration(seconds: 1),content: new Text("Total Price:  $tempprice Baht")));
 
   }
     _navigateAndDisplaySelection2(BuildContext context) async {
+    int tempprice = 0;
     purchased_data = await Navigator.push(
       context,
       MaterialPageRoute(
@@ -121,9 +123,8 @@ class ProductBoxList extends StatelessWidget {
               quotation_screen(Data: purchased_data,itemdata: items)),
     );
     if (purchased_data.price == null){
-      purchased_data.price = 0;
+      purchased_data.price = tempprice;
     }
-    int tempprice = purchased_data.price;
     Scaffold.of(context)
         .showSnackBar(new SnackBar(duration: new Duration(seconds: 1),content: new Text("Total Price:  $tempprice Baht")));
 
